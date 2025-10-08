@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felices 3 Meses, Mi Amor! ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Importar fuentes de Google Fonts para un diseño más elegante */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
+
+        :root {
+            /* Variables de Color */
+            --color-primary: #ff69b4; /* Rosa romántico */
+            --color-secondary: #f0e68c; /* Dorado suave */
+            --color-text: #4a4a4a;
+            --color-bg: #fff0f5; /* Fondo rosa muy suave */
+        }
+
+        /* --- Estilos Generales y Reseteo --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            text-align: center;
+        }
+
+        /* --- Estilo de Encabezado (Hero) --- */
+        .hero {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 60px 20px;
+            border-bottom-left-radius: 50% 15%;
+            border-bottom-right-radius: 50% 15%;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 10px auto;
+        }
+
+        .dedicatoria {
+            font-weight: 700;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        /* --- Estilo del Collage --- */
+        .collage-section {
+            padding: 20px;
+        }
+
+        .collage-section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: var(--color-primary);
+            margin-bottom: 30px;
+        }
+
+        .collage-grid {
+            display: grid;
+            /* Define la estructura del collage con 3 columnas */
+            grid-template-columns: repeat(3, 1fr); 
+            grid-gap: 15px; /* Espacio entre las fotos */
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        .photo-box {
+            overflow: hidden; /* Oculta partes de la imagen si se ajusta */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-box:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+            display: block;
+        }
+
+        /* La foto principal ocupará más espacio (por ejemplo, 2 celdas de ancho y 2 de alto) */
+        .main-photo {
+            grid-column: span 2; 
+            grid-row: span 2;
+        }
+
+        /* --- Estilo del Pie de Página (Footer) --- */
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 15px 0;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        /* --- Diseño Responsivo (para móviles) --- */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            /* En pantallas más pequeñas, el collage será de 1 columna */
+            .collage-grid {
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+            }
+
+            /* La foto principal vuelve a ser de 1 columna para que quepa en el móvil */
+            .main-photo {
+                grid-column: span 1; 
+                grid-row: span 1;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <header class="hero">
+        <h1>¡Felices 3 Meses, Mi Amor!</h1>
+        <p>Parece que fue ayer cuando empezamos esta hermosa aventura. ¡Gracias por cada risa, cada abrazo y cada momento a tu lado!</p>
+        <p class="dedicatoria">Te amo muchísimo, mi niña</p>
+    </header>
+
+    <section class="collage-section">
+        <h2>Nuestro Pequeño Álbum de Recuerdos</h2>
+        <div class="collage-grid">
+            <div class="photo-box main-photo">
+                <img src="1.jpeg" alt="Nuestro primer recuerdo">
+            </div>
+            
+            <div class="photo-box">
+                <img src="2.jpeg" alt="Recuerdo 2">
+            </div>
+            <div class="photo-box">
+                <img src="3.jpeg" alt="Recuerdo 3">
+            </div>
+            <div class="photo-box">
+                <img src="4.jpeg" alt="Recuerdo 4">
+            </div>
+            <div class="photo-box">
+                <img src="5.jpeg" alt="Recuerdo 5">
+            </div>
+            <div class="photo-box">
+                <img src="6.jpeg" alt="Recuerdo 6">
+            </div>
+            <div class="photo-box">
+                <img src="7.jpeg" alt="Recuerdo 7">
+            </div>
+            <div class="photo-box">
+                <img src="8.jpeg" alt="Recuerdo 7">
+            </div>
+            <div class="photo-box">
+                <img src="9.jpeg" alt="Recuerdo 7">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&hearts; 3 Meses y Contando &hearts;</p>
+    </footer>
+</body>
+</html>
